@@ -7,8 +7,9 @@
 
 <!-- badges: end -->
 
-The goal of fngr is to help maintain consistency in figures developed
-within ADF\&G.
+The goal of `fngr` is to help maintain consistency in figures developed
+within ADF\&G. If you have any problems or improvements to suggest
+please post theme [here](https://github.com/commfish/fngr/issues).
 
 ## Installation
 
