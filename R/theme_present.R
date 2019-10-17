@@ -1,27 +1,25 @@
-#' Set figure theme for reports
+#' Set figure theme for presentations
 #'
 #' @param base_size
 #' @param base_family
 #'
 #' @return
-#' @export theme_report
+#' @export theme_present
 #'
 #' @examples
 #'
-#'theme_report(base_size = 11, base_family = "Times")
+#'theme_present(base_size = 20, base_family = "sans")
 #'
 #'Other fonts are available, though sans font is
 #'the easiest to implement using the following.
 #'
-#'theme_report(base_family = "")
+#'theme_present(base_family = "")
 #'
 #'Updating font size is accomplished by changing the base_size.
 #'
-#'theme_report(base_size = 20, base_family = "")
+#'theme_present(base_size = 16)
 #'
-theme_report <- function(base_size = 11, base_family = "Times") {
-
-  windowsFonts(Times=windowsFont("TT Times New Roman"))
+theme_present <- function(base_size = 20, base_family = "sans") {
 
   half_line <- base_size/2
 

@@ -23,6 +23,6 @@ theme_report(base_family = "")
 
 Updating font size is accomplished by changing the base_size.
 
-theme_sleek(base_size = 20, base_family = "")
+theme_report(base_size = 20, base_family = "")
 
 }
