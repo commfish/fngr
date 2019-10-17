@@ -258,5 +258,5 @@ ggplot(df, aes(year, age, size = y)) +
   geom_point() +
   scale_x_continuous(breaks = xaxis$breaks, 
                      labels = xaxis$labels) +
-  theme_present ()
+  theme_present()
 ```
