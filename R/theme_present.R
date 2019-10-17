@@ -8,7 +8,7 @@
 #'
 #' @examples
 #'
-#'theme_present(base_size = 20, base_family = "sans")
+#'theme_present(base_size = 18, base_family = "sans")
 #'
 #'Other fonts are available, though sans font is
 #'the easiest to implement using the following.
@@ -19,7 +19,7 @@
 #'
 #'theme_present(base_size = 16)
 #'
-theme_present <- function(base_size = 20, base_family = "sans") {
+theme_present <- function(base_size = 18, base_family = "sans") {
 
   half_line <- base_size/2
 
