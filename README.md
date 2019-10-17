@@ -49,7 +49,7 @@ ggplot(df, aes(year, age, size = y)) +
   scale_size_area()
 ```
 
-<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="60%" />
 
 To make all figures have the same apperance and font set the “universal”
 figure theme to `theme_report()` (based off of Sean Anderson’s
@@ -68,7 +68,7 @@ ggplot(df, aes(year, age, size = y)) +
   scale_size_area()
 ```
 
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="60%" />
 
 R comes with only a few fonts installed.
 
@@ -98,7 +98,7 @@ ggplot(df, aes(year, age, size = y)) +
   scale_size_area()
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="60%" />
 
 More fonts are available via the `extrafont` package. This was loaded on
 your machine along with the `fngr` package.
@@ -132,7 +132,7 @@ ggplot(df, aes(year, age, size = y)) +
   scale_size_area()
 ```
 
-<img src="man/figures/README-unnamed-chunk-10-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-10-1.png" width="60%" />
 
 Revert back to the original `theme_report()` font.
 
@@ -152,7 +152,7 @@ ggplot(df, aes(year, age, size = y)) +
   scale_size_area()
 ```
 
-<img src="man/figures/README-unnamed-chunk-12-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-12-1.png" width="60%" />
 
 One could manually define the axis breaks (ticks).
 
@@ -163,7 +163,7 @@ ggplot(df, aes(year, age, size = y)) +
   scale_x_continuous(breaks = seq(1973, 2017, 3))
 ```
 
-<img src="man/figures/README-unnamed-chunk-13-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-13-1.png" width="60%" />
 
 Or use `pretty_breaks()` from the `scales` library.
 
@@ -174,7 +174,7 @@ ggplot(df, aes(year, age, size = y)) +
   scale_x_continuous(breaks = scales::pretty_breaks(n = 15))
 ```
 
-<img src="man/figures/README-unnamed-chunk-14-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-14-1.png" width="60%" />
 
 These provide more ticks and labels, but don’t place marks between the
 labels.
@@ -189,7 +189,7 @@ ggplot(df, aes(year, age, size = y)) +
                      labels = c("1975", "1980", "2000"))
 ```
 
-<img src="man/figures/README-unnamed-chunk-15-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-15-1.png" width="60%" />
 
 More clearly, but with greater difficulty each year can be assigned a
 tickmark via `breaks =` and each tick mark is labeled via `labels =`.
@@ -207,7 +207,7 @@ ggplot(df, aes(year, age, size = y)) +
                                 rep("", 4), "2015", rep("", 2)))
 ```
 
-<img src="man/figures/README-unnamed-chunk-16-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-16-1.png" width="60%" />
 
 The `tickr()` function will provide tick marks for every year (or age)
 and labels at a defined frequency.
@@ -222,7 +222,7 @@ ggplot(df, aes(year, age, size = y)) +
   scale_x_continuous(breaks = xaxis$breaks, labels = xaxis$labels) 
 ```
 
-<img src="man/figures/README-unnamed-chunk-17-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-17-1.png" width="60%" />
 
 This can be adjusted easily.
 
@@ -234,7 +234,7 @@ ggplot(df, aes(year, age, size = y)) +
   scale_x_continuous(breaks = xaxis$breaks, labels = xaxis$labels) 
 ```
 
-<img src="man/figures/README-unnamed-chunk-18-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-18-1.png" width="60%" />
 
 Additionally start and end values can be defined.
 
@@ -246,7 +246,7 @@ ggplot(df, aes(year, age, size = y)) +
   scale_x_continuous(breaks = xaxis$breaks, labels = xaxis$labels) 
 ```
 
-<img src="man/figures/README-unnamed-chunk-19-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-19-1.png" width="60%" />
 
 Just the start value.
 
@@ -258,7 +258,7 @@ ggplot(df, aes(year, age, size = y)) +
   scale_x_continuous(breaks = xaxis$breaks, labels = xaxis$labels) 
 ```
 
-<img src="man/figures/README-unnamed-chunk-20-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-20-1.png" width="60%" />
 
 Just the end value.
 
@@ -270,7 +270,7 @@ ggplot(df, aes(year, age, size = y)) +
   scale_x_continuous(breaks = xaxis$breaks, labels = xaxis$labels) 
 ```
 
-<img src="man/figures/README-unnamed-chunk-21-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-21-1.png" width="60%" />
 
 The start and end values can also be extended beyond the set axis by
 adjusting the limits.
@@ -283,7 +283,7 @@ ggplot(df, aes(year, age, size = y)) +
   scale_x_continuous(breaks = xaxis$breaks, labels = xaxis$labels, limits = c(1970, 2030)) 
 ```
 
-<img src="man/figures/README-unnamed-chunk-22-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-22-1.png" width="60%" />
 
 ``` r
 xaxis = tickr(df, year, 7, start = 1970, end = 2030)
@@ -293,4 +293,4 @@ ggplot(df, aes(year, age, size = y)) +
   scale_x_continuous(breaks = xaxis$breaks, labels = xaxis$labels, limits = c(1970, 2030)) 
 ```
 
-<img src="man/figures/README-unnamed-chunk-23-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-23-1.png" width="60%" />
